@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouton Navigation</title>
+    <style>
+
+
+    
+
+
+        /* Mampihatra sary ho background amin'ny pejy manontolo */
+        body {
+            
+        }
+        /* Applique ny background amin'ny pejy */
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url('vol.jpg'); /* Ampidiro eto ny sary */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+        body {
+            background-image: url('vol.jpg'); /* Asiana sary ho background */
+            background-size: cover; /* Mampitombo ny sary ho amin'ny habe manontolo */
+            background-position: center; /* Apetraka amin'ny afovoany ilay sary */
+            background-attachment: fixed; /* Mbola mitazona ny sary rehefa mi-scroll ny pejy */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Manana haavon'ny pejy feno */
+            color: white; /* Soratra ho fotsy ho mifanentana amin'ny background */
+        }
+        /* Header styling */
+        header {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        /* Styling boutons */
+        .nav-button {
+            margin: 0 15px;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            background-color: green;
+            border: 1px solid white;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .nav-button:hover {
+            background-color: white;
+            color: green;
+        }
+
+        /* Fizarana CSS */
+        main {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .section {
+            display: none; /* Afenina daholo amin'ny voalohany */
+        }
+
+        .section.active {
+            display: block; /* Miseho ny fizarana voafidy */
+        }
+
+        /* Styling editable paragraphe */
+        .editable-paragraph {
+            background-color: rgba(255, 255, 255, 0.8); /* Background mihaja kely */
+            padding: 15px;
+            border-radius: 5px;
+            min-height: 100px;
+            width: 80%;
+            margin: 20px auto;
+            font-size: 16px;
+            color: black;
+        }
+
+        /* Styling action message */
+        #action-message {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header navigation -->
+    <header>
+        <a href="#" class="nav-button" onclick="showSection('acceuil')">Accueil</a>
+        <a href="#" class="nav-button" onclick="showSection('robot')">Robot</a>
+        <a href="#" class="nav-button" onclick="showSection('preuve')">Preuve</a>
+        <a href="#" class="nav-button" onclick="showSection('service-client')">Service Client</a>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Fizarana Accueil -->
+        <div id="acceuil" class="section active">
+            <h1>Accueil</h1>
+            <div contenteditable="true" class="editable-paragraph" id="acceuil-paragraph">
+                <h2></h2>
+                <video width="640" height="300" controls>
+                    <source src="rb.mp4" type="video/mp4">
+                    Ny navigateur-nao dia tsy manohana ny playback video.
+                </video>
+                <h1>INFORMATION FENO MAKASIKA NY DERIV BOT</h1>
+
+                Fampahalalana Feno momba ny Deriv Bot<br><br>
+
+Inona ny Deriv Bot?<br><br>
+
+Ny Deriv Bot dia fitaovana manam-pahaizana manokana (automated trading system) natao hanampiana ireo mpivarotra (traders) amin'ny fanaovana varotra amin'ny sehatra Deriv.com. Io bot io dia miasa ho toy ny mpanampy mahaleo tena amin'ny fifampiraharahana amin'ny tsenan'ny fifanakalozana (forex, indices, crypto, sns.) tsy mila fandraisana anjara mivantana avy amin'ny mpampiasa.<br><br>
+<br>
+Ny Deriv Bot dia script na algorithma iray izay mifanandrify amin'ny famantarana ny tsena, ny fepetra ara-barotra, ary ny fiantraikan'ny tsena mba hanatanterahana ny varotra tsara indrindra. Azonao ampiasaina amin'ny sehatra DTrader, DBot, ary MT5 ao amin'ny Deriv.<br><br>
+<br>
+
+
+<h4>Fomba Fiasan’ny Deriv Bot</h4><br><br>
+1. Fanaraha-maso ny tsenan’ny varotra: Manara-maso ny fiovaovan’ny vidiny (price movements) sy ny fironan’ny tsena.<br><br>
+2. Fanadihadiana data: Ny bot dia mampiasa algorithma ara-statistika sy matetika mifototra amin'ny angon-drakitra lasa (historical data) mba hahafahana manao vinavina mialoha.<br><br>
+3. Fampiharana stratejia: Mitovy amin'ny mpivarotra matihanina, mampihatra drafitra stratejika izy araka ny tanjona sy ny risika ara-barotra.<br><br>
+4. Fanatanterahana automatique: Manatanteraka varotra (buy/sell) tsy mila fidiran'ny mpampiasa mivantana.<br><br>
+5. Fanaraha-maso ny fatiantoka sy tombony: Mametra faobe (limits) ho an'ny tombony sy fatiantoka mba hahazoana antoka fa voafehy ny risika.<br><br>
+
+
+
+<h4>Karazana Deriv Bot</h4><br><br>
+1. Binary Options Bots:<br><br>
+   - Mametraka varotra mifototra amin'ny vinavina hoe hiakatra (rise) sa hidina (fall) ny vidiny.<br><br>
+2. Forex Bots:<br><br>
+   - Mifantoka amin'ny fanovana eo amin'ny sandam-bola.<br><br>
+3. Synthetic Index Bots:<br><br>
+   - Miasa amin'ny tsena synthetic izay tsy voakasiky ny zava-misy ivelan'ny sehatra.<br><br>
+4. Cryptocurrency Bots:<br><br>
+   - Mandray anjara amin'ny varotra crypto toy ny BTC, ETH, sns.<br><br>
+5. MT5 Expert Advisors (EA):<br><br>
+   - Bots namboarina manokana ho an'ny sehatra MT5 mba hifanaraka amin'ny teknika fanaraha-maso manokana.<br><br>
+
+
+
+<h4>Ny Mahatsara ny Deriv Bot</h4><br><br>
+1. Fanaovana varotra 24/7:<br><br>
+   - Tsy reraka na mitsahatra ny bot ka afaka manararaotra fotoana tsara foana eny an-tsena.<br><br>
+   
+2. Fampihenana ny risika amin'ny alalan'ny fanaraha-maso matanjaka:<br><br>
+   - Mampiasa stop loss sy take profit izay mandrindra ny varotra mba hialana amin'ny fatiantoka tafahoatra.<br><br>
+   
+3. Fampiharana stratejia haingana:<br><br>
+   - Mahatohitra ny fiovaovan'ny tsena satria afaka manao varotra ao anatin'ny segondra vitsy.<br><br>
+
+4. Tsy mila fahaiza-manao lalina:<br><br>
+   - Mety ho an'ny vao manomboka satria ny bots dia efa manana rafitra mirindra sy stratejia napetraka.<br><br>
+5. Fahasamihafana (diversification):<br><br>
+   - Afaka manatanteraka varotra amin'ny sokajy maro samihafa toy ny forex, crypto, ary synthetic indices.<br><br>
+
+6. Fifehezana ny emotions:<br><br>
+   - Tsy voakasiky ny tahotra na ny fanantenana ny bot, ka tsy manao varotra diso noho ny fihetseham-po.<br><br>
+7. Fahaizana mivoatra:<br><br>
+   - Ny bot sasany dia azo amboarina ho mifanaraka amin’ny tetikady manokana na tanjona varotra.<br><br>
+
+
+<h4>Ireo Tokony Hodinihina Mialoha ny Fampiasana Deriv Bot</h4><br><br>
+1. Fahaizana mahafantatra ny tsena:<br><br>
+   - Na dia mandeha ho azy aza ny bot, ilaina ny fahatakarana fototra ny tsenan'ny varotra mba hisafidianana bots mety.<br><br>
+2. Fijerena ny fitsipika:<br><br>
+   - Ataovy azo antoka fa mifanaraka amin'ny fitsipika ny bot ary ara-dalàna ny fampiasana azy amin'ny firenenao.<br><br>
+
+3. Fijerena ny fampandehanana (Backtesting):<br><br>
+   - Alaina ny angon-drakitra taloha mba hizahana raha tena mahomby ilay bot.<br><br>
+
+4. Fanaraha-maso tsy tapaka:<br><br>
+   - Mety ho matoky bots tanteraka ianao, saingy tsara ny manara-maso mba hialana amin'ny olana ara-teknika na ny fiantraikan'ny tsena tsy nampoizina.<br><br>
+
+<h4>Ahoana no ahazoana Deriv Bot?</h4><br><br>
+
+3. Fividianana<br><br>
+   - Misy mpivarotra manokana manolotra bots efa namboarina araka ny stratejia manokana.Ohatra eto aminay ihany raha te hijery ny robot tsara ianao.<br><br>
+
+<h4>Mety Ho An'iza ny Deriv Bot?</h4><br><br>
+Mpivarotra vao manomboka<br><br>
+Tsy mila manao fanadihadiana lalina momba ny tsena.<br><br>
+Mpivarotra matihanina.<br><br>
+Ireo mitady hanatsara ny tombontsoa sy hamonjy fotoana.<br><br>
+Mpampiasa mitady passive income<br><br>
+Mandray tombony tsy mila fampidirana fotoana be.<br><br>
+
+
+
+
+            </div>
+        </div>
+
+        <!-- Fizarana Robot -->
+        <div id="robot" class="section">
+            <h1>Robot</h1>
+            <div contenteditable="true" class="editable-paragraph" id="robot-paragraph">
+                <h2>ININA NY ATAO HOE BOT TRADING? </h2><BR>
+
+                    Ny bot trading dia karazana systeme iray izay itanao amin'ny plteforeme tradimg maro samy hafa, tafiditra anatin'izany ny plateforne deriv. Ny bot trading dia natao mba hanampy ireo olona izay mba manana fanirina te hanao trading nefa tsy manana fahahalana feno makasika izany izy, Izy io fitaovana avo lenta izay natolotry ny plateforme deriv ho atsika . Ny deriv bot dia tsy mba manao fahadisoana velvely tahaka ny olombelona rehefa manao trading, manaja ny rafitra izay napetraky ny mpamorona azy izy io.
+                    <h3>Inona ny mampiavaka ny bot trading?</h3><br>
+
+                    Tsy mila mahafehy ny trading ianao vao afaka manao trading , ny bot trading afaka miasa ho an'ireo olona tsy mbola nanao trading mihitsy aza.<br>
+                    Tsy mandany fotoana ny bot trading raha ohatriana amin'ny fotoana lanin'olombelona.<br>
+                    Tsy manao erruer izany koa ny bot trading.
+                    Afaka miaro ny renimbola ny bot trading ,raha sedra misy olana eo amin'ny strategie ampiasainy.
+                    mbola maro ireo tomotsoa azo avy amin'ny fampiasana bot trading.<br>
+
+                    <h2>IREO ROBOT MISY ATO AMINAY </h2>
+
+                    Manana robot telo miavaka tsara izahay , izay azo atoka tsara amin'ny fananovana trading ao amin'ny palteforme deriv. <br> <br> <br>
+
+                    <h1>ROBOT 1</h1>
+                        ity no robot zandriny indrindra ato aminay , ity dia manatratra gains 0.5$ ka hatramin'ny 1$ isan'anandro . misy roboa roa miaraka aminy ho cadeau ho anao izany . Ny vidiny dia 5000ar monja. 
+                     <h1>ROBOT 2</h1>   
+                        ity no robot faharoa aty aminay , ity dia manatratra gains 1$ ka hatramin'ny 2$ isan'anandro . misy roboa roa miaraka aminy ho cadeau ho anao izany . Ny vidiny dia 10000ar monja. 
+                    <h1>ROBOT 3</h1>
+                    ity no robot zokiny  indrindra ato aminay , ity dia manatratra gains 2$ ka hatramin'ny 4$ isan'anandro . misy roboa roa miaraka aminy ho cadeau ho anao izany . Ny vidiny dia 20000ar monja.
+                    
+                    <h2> FANAMARIHANA </h2>
+
+                   <p>Raha ividy robot ianao kitio ihany ilay bouton HIVIDY  eto ambany.</p> <br>
+                   <button onclick="alert('ireto laharana andefsana azy, 0323911654, 0384557584,0333635111 ')">HIVIDY</button><br>
+
+                   <p>Toy izao ny lamina amin'ny fividianana robot ato aminay , rehefa nandefa an'ilay vola ianao , dia mifandraisa aminay ao amin'ny section SERVICE CLIENT , mila mandefa capture d'ecran an'ilay transaction nataonao ianao izay vao valider ny fividianao robot ato aminay , na koa alefanao ao ny laharana nandefa an'ilay vola izay vao afaka valider ny fividinao ilay robot</p><br>
+                   <p>Rehefa miteny hoe valider ny service client , dia omeo azy ny adreese email anao mba andefasana ilay robot ho anao . Mankasitraka indrindratompoko</p><br><br> 
+                    
+             
+                    <img src="sary.jpg" alt="Description de l'image" style="width: 500px; height: 300px;">
+
+                
+
+            </div>
+        </div>
+
+        <!-- Fizarana Preuve -->
+        <div id="preuve" class="section">
+            <h1>Preuve</h1>
+            <div contenteditable="true" class="editable-paragraph" id="preuve-paragraph">
+                Azonao atao ny manoratra eto amin'ny pejy Preuve.
+            </div>
+        </div>
+
+        <!-- Fizarana Service Client -->
+        <div id="service-client" class="section">
+            <h1>Service Client</h1>
+            <div contenteditable="true" class="editable-paragraph" id="service-client-paragraph">
+                Azonao atao ny manoratra eto amin'ny pejy Service Client.
+
+                <button onclick="alert('Action mandeha!')">Tsindrio Eto</button>
+ 
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Fonction JavaScript mampiseho ny fizarana voafidy
+        function showSection(sectionId) {
+            // Afeno ny fizarana rehetra
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Aseho ny fizarana mifanaraka amin'ny tsindry
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+
+     <!-- Footer -->
+     <footer>
+        &copy; 2024 varotra robot .
+    </footer>
+</body>
+</html>
